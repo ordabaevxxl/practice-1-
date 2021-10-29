@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital@1&family=Merriweather+Sans&display=swap');
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: gray;
+}
+
+.1{
+  margin: 10%;
+  width: 95%;
+
+}
+.text1 {
+  line-height: normal;
+  font-family: kanit;
+  opacity: 0.8;
+}
+
+.text2{
+  font-family: system-ui;
+  opacity: 0.4;
+}
+
+.glav {
+  max-width: 300px;
+  display: box;
+  display: flexbox;
+  display: flex;
+  margin: 15% auto;
+  border-radius: 10px;
+  background: #607c8e;
+  position: relative;
+}
+
+.glav .image img {
+  width: 118%;
+  height: 200px;
+}
+
+.glav .information {
+  margin-top: 2rem;
+  display: box;
+  display: flexbox;
+  display: flex;
+}
+
+.glav .information .icon img {
+  width: 60%;
+  object-fit: cover;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.glav .information .name {
+  font-weight: 700;
+  margin-bottom: .2rem;
+}
+
+.desktop-share {
+  position: absolute;
+  top: 110px;
+  right: -61px;
+  width: 230px;
+  display: box;
+  display: flexbox;
+  display: flex;
+  box-pack: justify;
+  flex-pack: justify;
+  justify-content: space-between;
+  box-align: center;
+  flex-align: center;
+          align-items: center;
+  background-color: dark;
+  padding: 1rem 2rem 1rem 2rem;
+  border-radius: 10px;
+  display: none;
+}
+
+.desktop-share ul li {
+  display: inline-block;
+}
+
+.desktop-share .share-name {
+  font-weight: 700;
+  letter-spacing: 5px;
+  color: blue;
+  box-flex: 40%;
+  flex: 40%;
+  flex: 40%;
+}
+
+.share-items {
+  display: box;
+  display: flexbox;
+  display: flex;
+  box-pack: space-evenly;
+  flex-pack: space-evenly;
+  justify-content: space-evenly;
+  box-align: center;
+  flex-align: center;
+  align-items: center;
+  background-color: blue;
+  padding: 1.5rem 2.5rem 1.5rem 2.5rem;
+  width: 100%;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: none;
+}
+
+.share-items ul li {
+  display: inline-block;
+}
+
+.share-items .share-name {
+  box-flex: 33%;
+  flex: 33%;
+  font-weight: 700;
+  letter-spacing: 5px;
+  color: blue;
+}
+
+.share-items .logos {
+  display: box;
+  display: flex;
+  flex: 33%;
+}
+
+.share-items .share {
+  display: flex;
+  box-align: center;
+  flex-align: center;
+  align-items: center;
+  box-flex: 33%;
+  flex: 33%;
+  flex: 33%;
+  box-pack: end;
+  lex-pack: end;
+  justify-content: flex-end;
+}
+
+.share-items .share a {
+  display: inline-block;
+  display: box;
+  display: flexbox;
+  display: flex;
+  box-pack: center;
+  flex-pack: center;
+  justify-content: center;
+  box-align: center;
+  flex-align: center;
+          align-items: center;
+  padding: .7rem;
+  border-radius: 50%;
+  background-color: gray;
+}
+
+.show {
+  display: box;
+  display: flexbox;
+  display: flex;
+  transition: all 1s ease-in;
+  transition: all 1s ease-in;
+}
+
+@media only screen and (min-width: 768px) {
+  .glav {
+    box-orient: horizontal;
+    box-direction: normal;
+    flex-direction: row;
+    flex-direction: row;
+    max-width: 700px;
+  }
+  .glav .image img {
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 0;
+  }
+}

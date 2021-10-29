@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+
+		<meta charset="UTF-8">
+		
+		 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		 <link rel="stylesheet" href="design.css">
+		 <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+		 <script language="JavaScript">
+		 	 function myFunction() {
+    			document.getElementById("demo").innerHTML = "Привет, javascript!";
+    			}
+		 	const shareTabOpen = document.querySelector('.information');
+			const shareTabClosed = document.querySelector('.share-items');
+
+			const desktopShare = document.querySelector('.desktop-share');
+			const shareIcon = document.querySelector('.share');
+
+
+
+
+			shareTabOpen.addEventListener('click', function () {
+			  if (window.innerWidth < 768) {
+			    shareTabOpen.style.display = 'none';
+			    shareTabClosed.style.display = 'flex';
+			  }
+			});
+
+			shareTabClosed.addEventListener('click', function () {
+			  if (window.innerWidth < 768) {
+			    shareTabClosed.style.display = 'none';
+			    shareTabOpen.style.display = 'flex';
+			  }
+			});
+
+
+
+			shareIcon.addEventListener('click', function (e) {
+			  if (window.innerWidth > 767) {
+
+			    desktopShare.classList.toggle('show');
+			  }
+
+			});
+		 </script>
+
+
+	</head>
+
+	<body>
+
+		 <div class="1">
+			  <div class="glav">
+				<div class="image">
+				  <img src="./images/drawers.jpg">
+				</div>
+				<div class="content">
+				  <h1 class="text1">Shift the overall look and feel by adding these wonderful
+					touches to furniture in your home</h1>
+				  <p class="text2">Ever been in a room and felt like something was missing? Perhaps
+					it felt slightly bare and uninviting. I’ve got some simple tips
+					to help you make any room feel complete.</p>
+				  <div class="information">
+					<div class="icon">
+					  <img src="images/hui.jpg">
+					</div>
+					<div class="info-name">
+					  <p class="name">Michelle Appleton</p>
+					  <p class="date">28 Jun 2020</p>
+					</div>
+					<div class="share">
+					  <a class="share-icon" href="#">
+						<img src="/images/icon-share.svg" alt="Arrow">
+					  </a>
+					</div>
+				  </div>
+				</div>
+				<div class="share-items">
+				  <h2 class="share-name">SHARE</h2>
+				  <ul class="logos">
+					<li>
+					  <a href="#"><img src="/images/icon-facebook.svg" alt="Facebook Logo"></a>
+					</li>
+					<li>
+					  <a href="#"><img src="/images/icon-twitter.svg" alt="Twitter Logo"></a>
+					</li>
+					<li>
+					  <a href="#"><img src="/images/icon-pinterest.svg" alt="Pinterest Logo"></a>
+					</li>
+				  </ul>
+				  <div class="share">
+					<a class="share-icon" href="#">
+					  <img src="/images/icon-share.svg" alt="Arrow">
+					</a>
+				  </div>
+				</div>
+				<div class="desktop-share">
+				  <h2 class="share-name">SHARE</h2>
+				  <ul class="logos">
+					<li>
+					  <a href="#"><img src="/images/icon-facebook.svg" alt="Facebook Logo"></a>
+					</li>
+					<li>
+					  <a href="#"><img src="/images/icon-twitter.svg" alt="Twitter Logo"></a>
+					</li>
+					<li>
+					  <a href="#"><img src="/images/icon-pinterest.svg" alt="Pinterest Logo"></a>
+					</li>
+				  </ul>
+				</div>
+			  </div>
+		 </div>
+		
+	</body>
+</html>
